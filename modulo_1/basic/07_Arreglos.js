@@ -57,3 +57,37 @@ var nombre = ["e", "d", "u", "a", "r", "r", "d", "o"]
 
  var pares = [2, 4, 6, 8, 10]
  console.log(pares.map((elemento)=>elemento + 1));
+
+ // deber 
+ /*
+ CREAR INSTANCIA ARRAY.
+ */
+
+  // var num = array.of (8,9,10,11,12,15);
+  //console.log(num);
+
+  /*
+  REDUCIR
+  */
+//const  suma  =  matriz1 . reducir ( ( total ,  valor )  =>  total  +  valor ,  0 ) ;
+//consola . log ( suma )
+
+/*
+UNSHIFT
+*/
+
+//consola . log ( pares . unshift ( 8 ) )
+
+
+/*
+FILTRAR
+*/
+
+//var  arr  =  [4,5,6,7,8,9] ;
+//var  filtrado  =  arr.filtro(num => num > 3) 
+
+/*
+FORMULARIO
+*/
+
+//consola.log( Matriz.de ("frm"));
