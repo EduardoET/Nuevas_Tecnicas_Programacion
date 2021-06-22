@@ -44,7 +44,7 @@ var nombre = ["e", "d", "u", "a", "r", "r", "d", "o"]
 // console.log(numerosDesordenados.shift());
 
 /**
-  * POP 
+  * POP jhas
   */
 //  console.log(numerosDesordenados.pop());
 
