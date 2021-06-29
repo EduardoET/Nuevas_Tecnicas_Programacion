@@ -1,17 +1,22 @@
 //traemos el paquete 
 const { Router } = require('express')
+const { DataValidator } = require('../Middlewares/DataValidator')
+const {User}= require('../lib/Schema/User') 
 
 //inicializamos router
 const router = Router()
 
+const {} = require("../Middleware/DataValidator")
+
 //creacion de endpoint
 
 .get('/', (req, res)=>{
-    res.send("HOLA MUNDO CON EXPRESSJS")
+    res.send("HOLA MUNDO CON EXPRESS JS")
 })
 
 
-.get("/saludo", (req, res) => {
+
+.get("/saludo", DataValidator("query", User), (req, res) => {
     //req.query
 
     //console.log(req, query )
@@ -36,3 +41,4 @@ const router = Router()
 
 //exportamos las rutas
 module.exports.RouterIndex = router 
+
