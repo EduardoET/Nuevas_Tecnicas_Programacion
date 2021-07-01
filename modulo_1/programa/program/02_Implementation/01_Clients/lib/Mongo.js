@@ -1,9 +1,10 @@
 const {MongoClient} = require('mongodb');
 
 const DB_NAME = "clients"
-const URL = "mongodb+srv://ETcode:<password>@cluster0.fptot.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const URL = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.fptot.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`;
 
-var MongoConnection = () => new Promise(async(resolve, reject) =>{
+var MongoConnection = () =>
+ new Promise(async(resolve, reject) =>{
     try {
         let client = new MongoClient(URL, {
             useNewUrlParser: true,
